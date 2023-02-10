@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset='utf-8'>
+  <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+  <title>Page Title</title>
+  <meta name='viewport' content='width=device-width, initial-scale=1'>
+  <script src='header.js' defer></script>
+  <style>
+    body {
+      margin: 0px;
+    }
+
+    .common-div {
+      height: 100px;
+      width: 100%;
+      background-color: aqua;
+      transition: top 500ms ease;
+    }
+
+    .header-css {
+      position: fixed;
+      top: 0px;
+      left: 0px;
+      animation-name: top-smooth;
+      animation-duration: 1s;
+    }
+
+    @keyframes top-smooth  {
+      from {
+        top: -100px;
+      }
+      to {
+        top: 0px;
+      }
+    }
+    
+    .other-divs {
+      height: 100vh;
+      width: 100%;
+      background-color: red;
+    }
+
+  </style>
+</head>
+<body>
+  <div class="other-divs" ></div>
+  <header class="common-div" ></header>
+  <div class="other-divs" ></div>
+  <div class="other-divs" ></div>
+  <div class="other-divs" ></div>
+</body>
+</html>
